@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Creator — TikTok Shop PK Premium Digital Store (28 Products)</title>
+    <meta name="description" content="Buy Verified TikTok UK/USA Monetized Accounts, Facebook Pages, Instagram Accounts & Ad Services in Pakistan.">
+    <!-- FontAwesome & Google Fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-dark: #07090e;
+            --bg-card: #0f172a;
+            --accent-blue: #38bdf8;
+            --accent-purple: #818cf8;
+            --accent-pink: #f43f5e;
+            --accent-green: #22c55e;
+            --accent-gold: #fbbf24;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Plus Jakarta Sans', sans-serif; }
+        body { background-color: var(--bg-dark); color: var(--text-primary); line-height: 1.6; min-height: 100vh; display: flex; flex-direction: column; }
+
+        /* Announcement Bar */
+        .top-bar {
+            background: linear-gradient(90deg, #1e1b4b, #311042);
+            padding: 10px 5%;
+            font-size: 0.85rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .social-btns { display: flex; gap: 10px; flex-wrap: wrap; }
+        .s-btn { color: #fff; text-decoration: none; padding: 5px 12px; border-radius: 20px; font-weight: 600; font-size: 0.8rem; display: flex; align-items: center; gap: 6px; transition: 0.3s; }
+        .s-btn.wa { background: rgba(34, 197, 94, 0.2); color: var(--accent-green); border: 1px solid var(--accent-green); }
+        .s-btn.tt { background: rgba(56, 189, 248, 0.2); color: var(--accent-blue); border: 1px solid var(--accent-blue); }
+        .s-btn:hover { transform: translateY(-2px); }
+
+        /* Navbar */
+        header {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(16px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 1.2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+        }
+        .brand-logo { font-size: 1.6rem; font-weight: 800; color: #fff; text-decoration: none; display: flex; align-items: center; gap: 10px; }
+        .brand-logo span { background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .btn-admin { background: rgba(56, 189, 248, 0.15); color: var(--accent-blue); border: 1px solid var(--accent-blue); padding: 8px 18px; border-radius: 20px; font-weight: 700; cursor: pointer; transition: 0.3s; }
+        .btn-admin:hover { background: var(--accent-blue); color: #000; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 2.5rem 5%; flex-grow: 1; width: 100%; }
+
+        /* Hero Banner */
+        .hero { text-align: center; margin-bottom: 3rem; }
+        .hero h1 { font-size: 2.8rem; font-weight: 800; margin-bottom: 1rem; background: linear-gradient(135deg, #fff, #94a3b8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { color: var(--text-secondary); max-width: 650px; margin: 0 auto 1.5rem; font-size: 1.05rem; }
+
+        /* Bank Payment Card */
+        .bank-box {
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.9));
+            border: 1px solid var(--accent-gold);
+            border-radius: 20px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 10px 30px rgba(251, 191, 36, 0.08);
+        }
+        .bank-header { color: var(--accent-gold); font-weight: 800; font-size: 1.1rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 10px; }
+        .bank-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; }
+        .bank-card { background: rgba(0,0,0,0.3); padding: 12px 16px; border-radius: 12px; border-left: 4px solid var(--accent-blue); }
+        .bank-card strong { color: #fff; display: block; }
+        .bank-card span { color: var(--text-secondary); font-size: 0.9rem; }
+
+        /* Admin Dashboard */
+        #adminPanel {
+            display: none;
+            background: #0b1120;
+            border: 1px solid var(--accent-blue);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+        }
+        .admin-form input, .admin-form textarea {
+            width: 100%; padding: 12px; margin-bottom: 12px; background: #07090e; border: 1px solid var(--border); color: #fff; border-radius: 10px;
+        }
+        .admin-form button {
+            background: var(--accent-blue); color: #000; border: none; padding: 12px 24px; font-weight: 800; border-radius: 10px; cursor: pointer; width: 100%;
+        }
+
+        /* Products Grid */
+        .section-title { font-size: 1.8rem; font-weight: 800; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px; }
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; }
+        .product-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 18px; overflow: hidden; display: flex; flex-direction: column; transition: 0.3s; }
+        .product-card:hover { transform: translateY(-5px); border-color: var(--accent-blue); }
+        .product-img { width: 100%; height: 180px; object-fit: cover; background: #07090e; }
+        .product-content { padding: 1.2rem; display: flex; flex-direction: column; flex-grow: 1; }
+        .product-title { font-size: 1.15rem; font-weight: 700; margin-bottom: 5px; color: #fff; }
+        .product-price { font-size: 1.3rem; font-weight: 800; color: var(--accent-blue); margin-bottom: 10px; }
+        .product-desc { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.2rem; flex-grow: 1; white-space: pre-line; }
+
+        .buy-btn {
+            background: linear-gradient(135deg, #22c55e, #15803d);
+            color: #fff; text-decoration: none; padding: 12px; border-radius: 10px; font-weight: 800; text-align: center; display: flex; align-items: center; justify-content: center; gap: 8px; transition: 0.3s;
+        }
+        .buy-btn:hover { opacity: 0.9; }
+
+        .admin-actions { display: none; gap: 8px; margin-top: 10px; }
+        .btn-edit { background: var(--accent-gold); color: #000; border: none; padding: 8px; border-radius: 6px; font-weight: 700; cursor: pointer; flex: 1; }
+        .btn-delete { background: var(--accent-pink); color: #fff; border: none; padding: 8px; border-radius: 6px; font-weight: 700; cursor: pointer; flex: 1; }
+
+        /* Floating WhatsApp Button */
+        .floating-wa {
+            position: fixed; bottom: 25px; right: 25px; background: #22c55e; color: #fff; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; box-shadow: 0 10px 25px rgba(34, 197, 94, 0.4); text-decoration: none; z-index: 9999; transition: 0.3s;
+        }
+        .floating-wa:hover { transform: scale(1.1); }
+
+        footer { background: #07090e; border-top: 1px solid var(--border); padding: 2.5rem 5%; text-align: center; color: var(--text-secondary); font-size: 0.9rem; margin-top: 4rem; }
+    </style>
+</head>
+<body>
+
+    <!-- Top Social Bar -->
+    <div class="top-bar">
+        <span><i class="fa-solid fa-headset"></i> Official Digital Creator Support</span>
+        <div class="social-btns">
+            <a href="https://wa.me/923028372072" target="_blank" class="s-btn wa"><i class="fa-brands fa-whatsapp"></i> WhatsApp Support</a>
+            <a href="https://tiktok.com" target="_blank" class="s-btn tt"><i class="fa-brands fa-tiktok"></i> TikTok Profile</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <a href="#" class="brand-logo"><i class="fa-solid fa-wand-magic-sparkles"></i> Digital <span>Creator</span></a>
+        <button class="btn-admin" onclick="openAdmin()"><i class="fa-solid fa-lock"></i> Admin Panel</button>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Digital Creator — TikTok Shop PK</h1>
+            <p>Buy Verified TikTok UK/USA Monetized Accounts, Facebook Pages, Instagram Accounts & Ad Services with Instant WhatsApp Delivery.</p>
+        </section>
+
+        <!-- Official Bank Account Banner -->
+        <div class="bank-box">
+            <div class="bank-header">
+                <i class="fa-solid fa-building-columns"></i> Official Payment Details (Usman Amjad)
+            </div>
+            <div class="bank-grid">
+                <div class="bank-card">
+                    <strong><i class="fa-solid fa-mobile-screen"></i> OPay Account</strong>
+                    <span>Account No: <b>0302-8372072</b></span><br>
+                    <span>Title: Usman Amjad</span>
+                </div>
+                <div class="bank-card">
+                    <strong><i class="fa-solid fa-university"></i> MCB Islamic Bank</strong>
+                    <span>Account No: <b>15911591000414530002</b></span><br>
+                    <span>Title: Usman Amjad S/O Amanullah</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Admin Panel (PIN: 6459) -->
+        <section id="adminPanel">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                <h2 style="color: var(--accent-blue);"><i class="fa-solid fa-sliders"></i> Product Control Panel</h2>
+                <button onclick="closeAdmin()" style="background: var(--accent-pink); color: #fff; border: none; padding: 6px 16px; border-radius: 8px; cursor: pointer; font-weight: 700;">Logout Admin</button>
+            </div>
+
+            <form class="admin-form" id="prodForm" onsubmit="saveProduct(event)">
+                <input type="hidden" id="editIndex" value="-1">
+                <input type="text" id="pTitle" placeholder="Product Title (e.g. Verified TikTok UK Account)" required>
+                <input type="text" id="pPrice" placeholder="Price (e.g. Rs. 2500)" required>
+                <input type="url" id="pImg" placeholder="Image URL (Direct Link / Unsplash)">
+                <textarea id="pDesc" rows="3" placeholder="Product Details & Features..." required></textarea>
+                <button type="submit" id="saveBtn">Save Product to Store</button>
+            </form>
+        </section>
+
+        <!-- Products Grid -->
+        <h2 class="section-title"><i class="fa-solid fa-shop"></i> Available Products & Services (<span id="prodCount">28</span>)</h2>
+        <div class="products-grid" id="productsGrid"></div>
+
+    </main>
+
+    <!-- Floating WhatsApp Icon -->
+    <a href="https://wa.me/923028372072" target="_blank" class="floating-wa" title="Contact WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Digital Creator Store. All Rights Reserved.</p>
+        <p>Managed & Developed by <strong>Usman Butt</strong> | Contact: <strong>0302-8372072</strong></p>
+    </footer>
+
+    <!-- Store Logic JavaScript -->
+    <script>
+        const ADMIN_PIN = "6459";
+        let isAdmin = false;
+
+        // Complete 28 Products Backup Data
+        const defaultProducts = [
+            { title: "Verified TikTok UK Account", price: "Rs. 2500", img: "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=500", desc: "Verified TikTok UK Account ready for monetization, instant delivery via WhatsApp." },
+            { title: "Verified TikTok USA Account", price: "Rs. 3000", img: "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=500", desc: "Verified TikTok USA Account ready for monetization and creator rewards." },
+            { title: "Monetized TikTok Account", price: "Rs. 5000", img: "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=500", desc: "Fully monetized TikTok account with active creator fund and analytics." },
+            { title: "10k TikTok Followers Package", price: "Rs. 1500", img: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500", desc: "High quality 10,000 real TikTok followers package with instant processing." },
+            { title: "Monetized Facebook Page", price: "Rs. 4500", img: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500", desc: "Monetized Facebook page ready for video uploads and earning." },
+            { title: "Instagram Account (10k Followers)", price: "Rs. 3500", img: "https://images.unsplash.com/photo-1611262588024-d12430b98920?w=500", desc: "Active Instagram account with 10k real followers and organic engagement." },
+            { title: "TikTok Ads Manager Account", price: "Rs. 4000", img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500", desc: "Verified TikTok Ads Manager account for running target audience ad campaigns." },
+            { title: "TikTok Creator Rewards Program Setup", price: "Rs. 2000", img: "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=500", desc: "Complete professional guidance and setup for TikTok Creator Rewards." },
+            { title: "TikTok LIVE Enabled Account", price: "Rs. 3200", img: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500", desc: "TikTok account with LIVE streaming feature unlocked and ready for gifts." },
+            { title: "TikTok Agency Account", price: "Rs. 6000", img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500", desc: "Top-tier TikTok Agency account with zero ban risk and high spending limit." },
+            { title: "Instagram Blue Badge Verification", price: "Rs. 12000", img: "https://images.unsplash.com/photo-1611262588024-d12430b98920?w=500", desc: "Official verification service for Instagram accounts with Meta Verified badge." },
+            { title: "Facebook Monetization Setup (In-Stream Ads)", price: "Rs. 5500", img: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500", desc: "Setup and approval service for Facebook In-Stream Ads monetization." },
+            { title: "YouTube Monetized Channel", price: "Rs. 9000", img: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500", desc: "Monetized YouTube channel with active AdSense and organic history." },
+            { title: "YouTube 1000 Subscribers & 4000 WatchHours", price: "Rs. 4500", img: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500", desc: "Complete monetization completion package for YouTube channels." },
+            { title: "Telegram Channel with 5k Members", price: "Rs. 2000", img: "https://images.unsplash.com/photo-1614680376593-902f749f7ffc?w=500", desc: "Active Telegram channel pre-loaded with 5,000 targeted members." },
+            { title: "Twitter (X) Monetized Account", price: "Rs. 4000", img: "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=500", desc: "X (Twitter) creator subscriber enabled account ready for payout." },
+            { title: "Snapchat Spotlight Monetized Account", price: "Rs. 3500", img: "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=500", desc: "Snapchat account eligible for Spotlight payouts and creator rewards." },
+            { title: "Discord Server with 10k Members", price: "Rs. 3000", img: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500", desc: "Fully structured Discord community server with 10,000 online members." },
+            { title: "Facebook Marketplace Enabled Profile", price: "Rs. 1800", img: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500", desc: "Old aged Facebook profile with active Marketplace access for selling." },
+            { title: "TikTok Shop Seller Center Account (UK/USA)", price: "Rs. 7000", img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500", desc: "Fully verified TikTok Shop seller center account for global e-commerce." },
+            { title: "Amazon Seller Central Account", price: "Rs. 10000", img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500", desc: "Verified Amazon Seller Central account ready for FBA and wholesale." },
+            { title: "Daraz Seller Account (Active)", price: "Rs. 2500", img: "https://images.unsplash.com/photo-1556742049-0a67d553c2a5?w=500", desc: "Daraz verified seller account ready to list products and start selling." },
+            { title: "Shopify Ready-to-Sell Store", price: "Rs. 6000", img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500", desc: "Custom designed professional Shopify e-commerce dropshipping store." },
+            { title: "WhatsApp Business API Setup", price: "Rs. 3500", img: "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=500", desc: "Automated WhatsApp Business API integration setup for online stores." },
+            { title: "Custom Android App (APK)", price: "Rs. 5000", img: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500", desc: "Custom Android mobile application built for your digital store or business." },
+            { title: "SMM Panel Reseller Script", price: "Rs. 4500", img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500", desc: "Fully functional social media marketing panel script with API support." },
+            { title: "SEO Backlinks Booster Package", price: "Rs. 2000", img: "https://images.unsplash.com/photo-1432888622747-4eb9a1efeb05?w=500", desc: "High authority SEO backlink building package to rank website on Google." },
+            { title: "Digital Creator VIP Mentorship", price: "Rs. 8000", img: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=500", desc: "One-on-one expert training and mentorship on digital asset flipping." }
+        ];
+
+        function getProducts() {
+            const saved = localStorage.getItem('dc_products_v28');
+            return saved ? JSON.parse(saved) : defaultProducts;
+        }
+
+        function saveProductsToStorage(prods) {
+            localStorage.setItem('dc_products_v28', JSON.stringify(prods));
+            renderProducts();
+        }
+
+        function renderProducts() {
+            const prods = getProducts();
+            const grid = document.getElementById('productsGrid');
+            document.getElementById('prodCount').innerText = prods.length;
+            grid.innerHTML = '';
+
+            prods.forEach((p, idx) => {
+                const card = document.createElement('div');
+                card.className = 'product-card';
+                card.innerHTML = `
+                    <img src="${p.img || 'https://images.unsplash.com/photo-1611605698335-8b1569810432?w=500'}" class="product-img" alt="${p.title}">
+                    <div class="product-content">
+                        <h3 class="product-title">${p.title}</h3>
+                        <div class="product-price">${p.price}</div>
+                        <div class="product-desc">${p.desc}</div>
+                        <a href="https://wa.me/923028372072?text=Hi%20Digital%20Creator,%20I%20want%20to%20order%20${encodeURIComponent(p.title)}%20(${encodeURIComponent(p.price)})" target="_blank" class="buy-btn">
+                            <i class="fa-brands fa-whatsapp"></i> Buy via WhatsApp
+                        </a>
+                        <div class="admin-actions" style="display:${isAdmin ? 'flex' : 'none'}">
+                            <button class="btn-edit" onclick="editProduct(${idx})">Edit</button>
+                            <button class="btn-delete" onclick="deleteProduct(${idx})">Delete</button>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function openAdmin() {
+            const pass = prompt("Enter Admin PIN (6459):");
+            if (pass === ADMIN_PIN) {
+                isAdmin = true;
+                document.getElementById('adminPanel').style.display = 'block';
+                renderProducts();
+                alert("Welcome Admin! Control panel active.");
+            } else if (pass !== null) {
+                alert("Incorrect Password!");
+            }
+        }
+
+        function closeAdmin() {
+            isAdmin = false;
+            document.getElementById('adminPanel').style.display = 'none';
+            renderProducts();
+        }
+
+        function saveProduct(e) {
+            e.preventDefault();
+            if(!isAdmin) return;
+
+            const idx = parseInt(document.getElementById('editIndex').value);
+            const title = document.getElementById('pTitle').value;
+            const price = document.getElementById('pPrice').value;
+            const img = document.getElementById('pImg').value;
+            const desc = document.getElementById('pDesc').value;
+
+            const prods = getProducts();
+
+            if (idx === -1) {
+                prods.unshift({ title, price, img, desc });
+            } else {
+                prods[idx] = { title, price, img, desc };
+            }
+
+            saveProductsToStorage(prods);
+            document.getElementById('prodForm').reset();
+            document.getElementById('editIndex').value = "-1";
+            alert("Product Saved Successfully!");
+        }
+
+        function editProduct(idx) {
+            const prods = getProducts();
+            const p = prods[idx];
+            document.getElementById('editIndex').value = idx;
+            document.getElementById('pTitle').value = p.title;
+            document.getElementById('pPrice').value = p.price;
+            document.getElementById('pImg').value = p.img || '';
+            document.getElementById('pDesc').value = p.desc;
+            window.scrollTo({ top: 150, behavior: 'smooth' });
+        }
+
+        function deleteProduct(idx) {
+            if(confirm("Are you sure you want to delete this product?")) {
+                const prods = getProducts();
+                prods.splice(idx, 1);
+                saveProductsToStorage(prods);
+            }
+        }
+
+        // Render on Load
+        renderProducts();
+    </script>
+</body>
+</html>
